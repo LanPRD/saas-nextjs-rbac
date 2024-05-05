@@ -1,0 +1,10 @@
+{
+  "extends": "@saas-monorepo/tsconfig/node.json",
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}

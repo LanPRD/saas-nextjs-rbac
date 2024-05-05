@@ -1,0 +1,4 @@
+{
+  "extends": "@saas-monorepo/tsconfig/library.json",
+  "include": ["src/**/*"]
+}
