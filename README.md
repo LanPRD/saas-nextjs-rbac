@@ -23,6 +23,7 @@ No backend, foi utilizado [Node.js](https://nodejs.org/docs/latest/api/) com o s
 ### Packages
 
 - [@saas-monorepo/auth](./packages/auth/)
+- [@saas-monorepo/env](./packages/env/)
 - [@saas-monorepo/tsconfig](./config/typescript-config/)
 
 ### TypeScript
