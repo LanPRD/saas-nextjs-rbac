@@ -96,7 +96,7 @@ model Organization {
   createdAt                 DateTime  @default(now()) @map("created_at")
   updatedAt                 DateTime  @updatedAt @map("updated_at")
 
-  owner   User    @relation(fields: [ownerId], references: [id])
+  owner     User    @relation(fields: [ownerId], references: [id])
   ownerId   String  @map("user_id")
 
   invites   Invite[]
@@ -119,7 +119,7 @@ model Project {
   organizationId  String          @map("organization_id")
 
   owner     User    @relation(fields: [ownerId], references: [id])
-  ownerId  String  @map("owner_id")
+  ownerId   String  @map("owner_id")
 
   @@map("projects")
 }
