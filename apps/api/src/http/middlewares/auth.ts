@@ -1,6 +1,6 @@
 import type { FastifyInstance } from "fastify";
-import { UnauthorizedError } from "../routes/_errors/anauthorized-error";
 import fastifyPlugin from "fastify-plugin";
+import { UnauthorizedError } from "../routes/_errors/anauthorized-error";
 
 export const auth = fastifyPlugin(async (app: FastifyInstance) => {
   app.addHook("preHandler", async request => {
